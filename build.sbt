@@ -1,8 +1,16 @@
-val Organization = "Underhacker"
-val Name = "Infohub"
-val InfohubVersion := "0.1"
+/**
+ * Build configurations.
+ */
 
-organization := Organization
-name := Name
-version := InfohubVersion
-scalaVersion := "2.11.7"
+lazy val commonSettings : Seq[Setting[_]] = Seq(
+  organization := "org.underhacker",
+  version := "0.0.1",
+  scalaVersion := "2.11.7"
+)
+
+lazy val root = (project in file(".")).
+  settings(commonSettings: _*).
+  settings(
+    name := "Infohub"
+  )
+
