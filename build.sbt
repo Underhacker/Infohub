@@ -11,6 +11,7 @@ lazy val commonSettings : Seq[Setting[_]] = Seq(
 lazy val root = (project in file(".")).
   settings(commonSettings: _*).
   settings(
-    name := "Infohub"
+    name := "Infohub",
+    showTiming := false,
+    showSuccess := false
   )
-

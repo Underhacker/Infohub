@@ -1,4 +1,4 @@
-package org.underhacker.Hello
+package org.underhacker.infohub
 
 /** Test.
   *  @author Augustus Huang
